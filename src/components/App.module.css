@@ -1,0 +1,10 @@
+.app{
+    background-color: red;
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    align-items:center ;
+}
