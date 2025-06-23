@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './App.module.css'
 import {Button} from "./ui/button/Button";
+import {Checkbox} from "./ui/checkbox/Checkbox";
+import s from './App.module.css'
+import '../styles/global.css'
 
 export const App = () => {
     return (
@@ -19,6 +21,8 @@ export const App = () => {
                 <Button variant={'outlined'} size={'small'}>outlined small</Button>
                 <Button variant={'outlined'} size={'medium'}>outlined medium</Button>
                 <Button variant={'outlined'} size={'large'}>outlined large</Button>
+                <Checkbox label={'las'} disabled={true}/>
+                <Checkbox label={'las'} disabled={false}/>
             </div>
         </div>
     );

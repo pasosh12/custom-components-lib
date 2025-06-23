@@ -5,7 +5,6 @@ import s from './Button.module.css'
 type PropsType = {
     variant?: 'contained' | 'outlined' | 'text'
     size?: 'small' | 'medium' | 'large'
-    asChild?: boolean
 } & ComponentProps<'button'>
 
 const variantStyles = {

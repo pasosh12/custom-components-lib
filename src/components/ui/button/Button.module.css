@@ -1,4 +1,4 @@
-@import '../../../styles/colors.css';
+@import '../../../styles/global.css';
 .btn {
     font: 500 14px/1.5 Roboto, sans-serif;
     border: none;
