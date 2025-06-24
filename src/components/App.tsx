@@ -1,10 +1,10 @@
 import React from 'react';
 import {Button} from "./ui/button/Button";
 import {Checkbox} from "./ui/checkbox/Checkbox";
-import s from './App.module.css'
-import '../styles/global.css'
 import {Select} from "./ui/select/Select";
-import Switch from "./ui/switch/Switch";
+import {Switch} from "./ui/switch/Switch";
+import '../styles/global.css'
+import s from './App.module.css'
 
 export const App = () => {
 
@@ -29,6 +29,9 @@ export const App = () => {
                 <Select options={['none', 'Ten', 'Twenty', 'Thirty']}
                 label={'age'}/>
                 <Switch/>
+                <Switch checked/>
+                <Switch disabled checked={true}/>
+                <Switch disabled label={'required'} />
             </div>
         </div>
     );
