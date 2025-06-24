@@ -56,17 +56,18 @@
 
 .switch_slider {
     position: absolute;
-    left: 0;
+
     border-radius: 50%;
     background-color:var(--primary-gray);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.2s ease;
+    transform: translateX(0); /*left: 0;*/
+    transition: transform 0.25s ease;
 }
 
 .switch_slider__checked {
     left: auto;
-    right: 0;
     background-color: var(--primary-dark);
+    transform: translateX(25px); /*right: 0;*/
 }
 
 .switch_label {
