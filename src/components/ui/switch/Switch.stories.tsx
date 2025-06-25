@@ -5,9 +5,9 @@ const meta = {
     title: 'Components/Switch',
     component: Switch,
     argTypes: {
-        disabled: { control: 'boolean' },
-        checked: { control: 'boolean' },
-        label: { control: 'text' },
+        disabled: {control: 'boolean'},
+        checked: {control: 'boolean'},
+        label: {control: 'text'},
     },
 } satisfies Meta<typeof Switch>
 export default meta
@@ -26,7 +26,7 @@ export const DefaultChecked: Story = {
         label: 'Label',
     },
 }
-export const  DisabledDefault: Story = {
+export const DisabledDefault: Story = {
     args: {
         disabled: true,
         children: 'Contained',
@@ -41,4 +41,3 @@ export const DisabledChecked: Story = {
     },
 }
 
-// variant: 'contained'| 'outline' | 'text',

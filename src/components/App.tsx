@@ -5,6 +5,7 @@ import {Select} from "./ui/select/Select";
 import {Switch} from "./ui/switch/Switch";
 import '../styles/global.css'
 import s from './App.module.css'
+import {TextField} from "./ui/textField/TextField";
 
 export const App = () => {
 
@@ -27,11 +28,22 @@ export const App = () => {
                 {/*<Checkbox label={'las'} disabled={true}/>*/}
                 <Checkbox label={'las'} disabled={false}/>
                 <Select options={['none', 'Ten', 'Twenty', 'Thirty']}
-                label={'age'}/>
+                label={'Age'}/>
                 <Switch/>
                 <Switch checked/>
                 <Switch disabled checked={true}/>
                 <Switch disabled label={'required'} />
+                <TextField/>
+                <TextField disabled/>
+                <TextField error />
+                <TextField variant={'filled'} label={'filled'} />
+                <TextField variant={'filled'} label={'filled'} disabled/>
+                <TextField variant={'filled'} label={'filled'}  error />
+                <TextField variant={'standard'} label={'standard'} />
+                <TextField variant={'standard'} label={'standard'}  disabled/>
+                <TextField variant={'standard'} label={'standard'} type={'number'}/>
+
+                <TextField variant={'standard'} error />
             </div>
         </div>
     );

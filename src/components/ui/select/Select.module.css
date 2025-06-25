@@ -1,34 +1,35 @@
-.floatingLabel {
-    position: absolute;
-    top:0;
-    left:8px;
-    font-size:8px;
-    color:#585A5C;
-    pointer-events:none;
-    transform:translateY(-50%);
-    background-color: white;
-    padding: 0 2px;
-    transition:all 0.2s ease;
-}
-
-
-
-.selectWrapper {
+.select_wrapper {
     position: relative;
-    /*min-width: 200px*/
+    font-family: Roboto, sans-serif;
 }
 
-.styledSelect  {
+.styled_select  {
     color: black;
-    border: 1px solid var(--primary-main);
+    border: 1px solid var(--base-gray);
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px 10px 20px;
     min-width: 150px;
 }
 
-.styledSelect:focus {
+.styled_select:focus {
     border: 1px solid var(--primary-main);
     outline: none;
-
+}
+.floating_label {
+    position: absolute;
+    top:50%;
+    left:12px;
+    font-size:12px;
+    color:#585A5C;
+    transform:translateY(-50%);
+    background-color: white;
+    padding: 0 2px;
+    pointer-events:none;
+    transition:all 0.2s ease;
+}
+.labelActive {
+    top: -8px;
+    transform: none;
+    color: var(--primary-main);
 }
 

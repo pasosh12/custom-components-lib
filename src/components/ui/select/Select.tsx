@@ -17,19 +17,20 @@ export const Select = ({options, label, selectHandler, ...rest}: SelectProps) =>
     }
     return (
         <>
-            <div className={s.selectWrapper}>
-                {label && <label className={s.floatingLabel}>
-                    {label}
-                </label>}
-                <select defaultValue='' className={s.styledSelect} value={selected}
+            <div className={s.select_wrapper}>
+                <select defaultValue="" className={s.styled_select} value={selected}
                         onChange={onChangeHandler}
                         {...rest}>
+                    <option value=""></option>
                     {options.map((o: string, index: number) => {
                         return (
                             <option key={index} value={o}>{o}</option>
                         )
                     })}
                 </select>
+                <label className={`${s.floating_label} ${selected ? s.labelActive : ''}`}>
+                    {label}
+                </label>
             </div>
         </>
     )
