@@ -1,4 +1,4 @@
-import React, {InputHTMLAttributes} from 'react';
+import React, {InputHTMLAttributes, useId} from 'react';
 import s from './TextField.module.css'
 import clsx from "clsx";
 
@@ -23,6 +23,8 @@ export const TextField = ({
         [s.textfield__outlined]: variant === "outlined",
         [s.error]: error,
     });
+    const generatedId=useId()
+    const inputId= props.id ?? generatedId
     return (
         <div className={s.textfield_wrapper}>
             <div className={s.input_wrapper}>
@@ -30,12 +32,11 @@ export const TextField = ({
                     className={inputClassName}
                     placeholder=' '
                     {...props}
-                    id={props.id}
-                    data-testid="select-input"
+                    id={inputId}
                     required={props.required}
                 />
                 <label className={s.textfield_label}
-                 htmlFor={props.id}>
+                 htmlFor={inputId}>
                     { label}
                 </label>
             </div>
