@@ -3,13 +3,12 @@ import '../styles/global.css'
 import s from './App.module.css'
 
 export const App = () => {
-   return (
+    return (
         <div>
             <div className={s.app}>
                 Hello world
             </div>
             <div className={s.buttonContainer}>
-
             </div>
         </div>
     );
