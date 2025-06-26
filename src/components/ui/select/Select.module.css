@@ -4,7 +4,7 @@
 }
 
 .styled_select  {
-    color: black;
+    color:  var(--font-color-primary);
     border: 1px solid var(--base-gray);
     border-radius: 5px;
     padding: 20px 10px 20px;

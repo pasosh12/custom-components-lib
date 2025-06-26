@@ -73,6 +73,6 @@
 .switch_label {
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    color: black;
+    color:  var(--font-color-primary);
     cursor: pointer;
 }
