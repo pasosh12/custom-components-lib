@@ -38,7 +38,13 @@ export const WithHelpText: Story = {
         helperText:'Helper Text',
     },
 }
-
+export const noLabel: Story = {
+    args: {
+        options: ['None','Ten','Twenty','Thirty'],
+        label: '',
+        helperText:'Helper Text',
+    },
+}
 
 
 // variant: 'contained'| 'outline' | 'text',

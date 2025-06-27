@@ -12,7 +12,7 @@
     "build:prod": "webpack --env mode=production",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
