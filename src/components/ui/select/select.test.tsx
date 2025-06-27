@@ -24,7 +24,7 @@ describe('Select – prop-based rendering', () => {
 
     it('calls selectHandler with correct value on change', async () => {
         const handler = jest.fn();
-        render(<Select options={['A', 'B']} selectHandler={handler} />);
+        render(<Select label={'Value'} options={['A', 'B']} selectHandler={handler} />);
         const select = screen.getByRole('combobox');
         await userEvent.selectOptions(select, 'B');
         expect(handler).toHaveBeenCalledWith('B');

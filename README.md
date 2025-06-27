@@ -23,3 +23,8 @@ Create a development or production build:
 npm run build:dev    # Development build
 npm run build:prod   # Production build
 </pre>
+### Tests
+Run test for every component 
+<pre>
+npm test
+</pre>

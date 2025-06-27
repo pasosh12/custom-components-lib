@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 type SelectProps = {
     options: string[]
-    label: string
+    label?: string
     errorText?: string
     disabled?: boolean
     helperText?: string
